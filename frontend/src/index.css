@@ -1,0 +1,129 @@
+:root {
+  --app-bg: #eef3f9;
+  --app-card-bg: #ffffff;
+  --app-card-shadow: 0 10px 24px rgba(7, 32, 75, 0.08), 0 2px 6px rgba(7, 32, 75, 0.06);
+  --app-card-radius: 14px;
+  --app-mono: 'SF Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans 3', 'Work Sans', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  background: var(--app-bg);
+  color: #0c1b33;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.ant-layout,
+.ant-layout-sider {
+  background: #ffffff;
+}
+
+.ant-layout-content {
+  background: var(--app-bg);
+}
+
+.ant-card {
+  background: var(--app-card-bg);
+  border-radius: var(--app-card-radius);
+  box-shadow: var(--app-card-shadow);
+  border: 1px solid rgba(12, 27, 51, 0.06);
+}
+
+.ant-card .ant-card-head {
+  border-bottom: 1px solid rgba(12, 27, 51, 0.06);
+}
+
+.ant-statistic-content-value,
+.ant-table,
+.ant-table th,
+.ant-table td {
+  font-family: var(--app-mono);
+}
+
+.ant-table th {
+  font-weight: 600;
+}
+
+.ant-tag,
+.ant-badge-count {
+  font-family: var(--app-mono);
+}
+
+.app-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 16px;
+  border-bottom: 1px solid rgba(12, 27, 51, 0.06);
+}
+
+.app-brand__mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #0b3d91 0%, #1f4fa3 55%, #3a7bd5 100%);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-family: var(--app-mono);
+  box-shadow: 0 8px 16px rgba(7, 32, 75, 0.18);
+}
+
+.app-brand__text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+}
+
+.app-brand__subtitle {
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: rgba(12, 27, 51, 0.55);
+  font-family: var(--app-mono);
+}
+
+.kpi-trend-list {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+}
+
+.kpi-trend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.kpi-trend__label {
+  color: inherit;
+  opacity: 0.85;
+}
+
+.kpi-trend__value {
+  font-family: var(--app-mono);
+  color: inherit;
+  font-weight: 600;
+}
+
+.kpi-trend--muted {
+  color: rgba(12, 27, 51, 0.45);
+}

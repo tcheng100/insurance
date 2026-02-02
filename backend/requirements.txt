@@ -1,0 +1,7 @@
+flask==3.1.0
+flask-cors==5.0.0
+pandas>=2.2.0
+openpyxl==3.1.5
+pypinyin==0.53.0
+python-dotenv==1.0.1
+gunicorn==23.0.0
