@@ -14,7 +14,7 @@ from services.kpi_calculator import KPICalculator
 app = Flask(__name__)
 CORS(app, resources={
     r"/api/*": {
-        "origins": ["https://your-vercel-url.vercel.app"],
+        "origins": ["https://insurance-84s7jxnv7-tonys-projects-a2818332.vercel.app"],
         "methods": ["GET", "POST", "OPTIONS"],
         "allow_headers": ["Content-Type"]
     }
