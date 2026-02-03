@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Select, Button, Card, Row, Col, Radio, Divider, Modal, Badge } from 'antd';
+import { Select, Button, Card, Row, Col, Radio, Modal, Badge } from 'antd';
 import { ClearOutlined, FilterOutlined } from '@ant-design/icons';
 import { useFilters } from '../../context/FilterContext';
 import { GROUP_BY_LABELS } from '../../utils/formatters';

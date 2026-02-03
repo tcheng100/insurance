@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Descriptions, Typography, Divider, Table } from 'antd';
+import { Card, Descriptions, Typography, Table } from 'antd';
 import { CalculatorOutlined } from '@ant-design/icons';
 
 const { Title, Text, Paragraph } = Typography;

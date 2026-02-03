@@ -13,7 +13,7 @@ import {
 } from 'recharts';
 import { useFilters } from '../../context/FilterContext';
 import { getMarginAnalysis, exportData } from '../../utils/api';
-import type { MarginAnalysisResult, GroupStats, CrossGroupRow } from '../../types';
+import type { MarginAnalysisResult, GroupStats } from '../../types';
 import {
   formatMoney,
   formatNumber,
